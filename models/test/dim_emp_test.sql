@@ -6,4 +6,4 @@ select
         then 'usa'
         else lower(country)
     end as country
-from emp_test1
+from {{ source('raw', 'emp_test1') }}

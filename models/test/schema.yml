@@ -19,3 +19,7 @@ models:
                   - 'US'
                   - 'usa'
                   - 'us'
+      - name: name
+        description: "Contains employee name information. It is PII data"
+      - name: salary
+        description: "Contains employee salary information"
