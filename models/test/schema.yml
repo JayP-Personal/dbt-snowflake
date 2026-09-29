@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_emp_test
+    description: "Contains employee information"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: country
+        description: "Contains country information of USA customers"
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - 'USA'
+                  - 'US'
+                  - 'usa'
+                  - 'us'
