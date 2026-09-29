@@ -1,0 +1,15 @@
+# profiles.yml.example
+dbt_project_2026:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: KMGWYZX-XLB35037
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      database: SNOWFLAKE_LEARNING_DB
+      warehouse: COMPUTE_WH
+      schema: DEV
+      threads: 4
+      client_session_keep_alive: False
