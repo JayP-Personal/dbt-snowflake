@@ -39,3 +39,8 @@ models:
 
 flags:
   partial_parse: false
+
+vars:
+  country: usa
+  salary: 10000
+  department: it
