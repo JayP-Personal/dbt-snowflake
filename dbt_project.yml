@@ -36,3 +36,6 @@ models:
       +materialized: view
     test:
       +materialized: view
+
+flags:
+  partial_parse: false

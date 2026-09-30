@@ -8,3 +8,22 @@ sources:
     tables:
       - name: emp_test1
         description: Employee info table
+        columns:
+          - name: id
+            data_tests:
+              - unique
+
+      - name: employee_test2
+        description: Employee info table
+        config: 
+          loaded_at_field: LoadTimestamp
+          freshness:
+            warn_after: 
+              count: 1
+              period: hour
+            error_after: 
+              count: 2
+              period: hour
+        
+        
+
